@@ -54,6 +54,7 @@ const Post = ({ post }) => {
 				return (
 					<div className="rounded">
 						<iframe
+							className="rounded"
 							width="100%"
 							height="315"
 							src={embedUrl}
@@ -83,21 +84,21 @@ const Post = ({ post }) => {
 		<div className="bg-black text-white p-8 rounded shadow-xl mb-4 relative">
 			<button
 				onClick={handleRemovePost}
-				className="absolute top-0 right-0 hover:text-red-500 focus:outline-none p-7 font-bold text-2xl"
+				className="absolute top-0 right-0 hover:text-red-500 focus:outline-none pr-7 pt-7 font-bold text-2xl"
 			>
 				&times;
 			</button>
-			<p className="text-xs mb-1">
+
+			<h3 className="text-lg font-bold hover:cursor-pointer">{title}</h3>
+			<p className="text-xs mb-4">
 				<span className="hover:cursor-pointer hover:underline">{username}</span>{" "}
 				• <span className="hover:cursor-pointer hover:underline">{time}</span> •{" "}
 				<span className="hover:cursor-pointer hover:underline">{topic}</span>
 			</p>
 
-			<h3 className="text-lg font-bold mb-2 hover:cursor-pointer">{title}</h3>
+			<div className=" mb-4 hover:cursor-pointer">{renderMedia()}</div>
 
 			<p className="mb-4">{description}</p>
-
-			<div className="mb-4 hover:cursor-pointer">{renderMedia()}</div>
 
 			<div className="flex items-center justify-between py-2300 bg-blue-500	text-white rounded px-3 py-2 text-sm">
 				<div className="flex gap-x-3">
