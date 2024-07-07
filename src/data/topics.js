@@ -1,0 +1,27 @@
+const topics = [
+	"Technology",
+	"Travel",
+	"Gaming",
+	"Food",
+	"Fashion",
+	"Automotive",
+	"DIY",
+	"Finance",
+	"Sustainability",
+	"Art",
+	"Science",
+	"Programming",
+	"Mental Health",
+	"Gardening",
+	"Adventure",
+	"Language",
+	"Business",
+	"Carpentry",
+	"Photography",
+	"Books",
+	"Energy",
+	"Space",
+	"Fitness",
+];
+
+export default topics;
